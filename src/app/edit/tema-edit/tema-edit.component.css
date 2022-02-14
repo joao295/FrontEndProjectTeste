@@ -1,0 +1,52 @@
+.fundo-cinza{
+    background-color: #1F1F22;
+}
+
+.fundo-cinza-claro{
+    background-color: #9e9ea1;
+}
+
+.fonte-cinza-claro{
+    color: #9E9EA1
+}
+
+.btn-amarelo {
+    font-weight: bold;
+    background-color: #ffd700
+}
+
+.btn-preto {
+    font-weight: bold;
+    background-color: #0C0C0D;
+    color: white;
+}
+
+.btn-amarelo:hover {
+    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+.btn-preto:hover {
+    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+.btn-cinza{
+    font-weight: bold;
+    background-color: #1F1F22;
+    color: white;
+}
+
+.fundo-amarelo:hover {
+    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+.fundo-preto:hover {
+    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+.borda-arredondada {
+    border-radius: 23px;
+}
+
+.borda-sombreada {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}

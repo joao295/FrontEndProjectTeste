@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-lg navbar-light fundo-nav">
+    <div class="container-fluid">
+        <!-- Logo -->
+        <a routerLink="/inicio">
+            <img class="logo mx-4 my-3" src="../../assets/img/logo.png" alt="Logo da Gen.TI">
+        </a>
+
+
+        <!-- Itens do menu-->
+        <div class="collapse navbar-collapse d-flex justify-content-end mx-4 mt-2" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        
+                        <a class="nav-link text-white text-center font-navbar sublinhado-gradiente fonte-menu" href="#inicio"><i class="fa fa-home w-100 text-white fs-2 text-center" aria-hidden="true"></i>Home<span class="sr-only">(current)</span></a>
+                    </div>
+
+                </li>
+
+                <li class="nav-item">
+
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        
+                        <a class="nav-link text-white text-center font-navbar sublinhado-gradiente fonte-menu" href="#postagens"><i class="fa fa-align-justify w-100 text-white fs-2 text-center" aria-hidden="true"></i>Postagens</a>
+                    </div>
+
+                </li>
+
+                <li class="nav-item">
+
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        
+                        <a class="nav-link text-white text-center font-navbar sublinhado-gradiente fonte-menu" [routerLink]="['/usuario-edit', id]"><i class="fa fa-user w-100 text-white fs-2 text-center" aria-hidden="true"></i>Usuário</a>
+                    </div>
+
+                </li>
+
+                <li class="nav-item">
+                    <div>
+                        
+                        <a (click)='sair()' class="nav-link text-white text-center font-navbar sublinhado-gradiente fonte-menu"><i class="fa fa-times-circle w-100 text-white fs-2 text-center" aria-hidden="true"></i>Sair</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>

@@ -1,0 +1,48 @@
+<div class="container font-nome">
+
+    <div class="row ">
+        <div class="col-md-12">
+            <h1 class="text-center btn-preto:hover">Atualizar postagem</h1>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-6">
+
+            <!-- Modal -->
+            <div class="modal-body">
+
+
+                <div class="form-group py-2">
+                    <label for="titulo">Titulo</label>
+                    <input [(ngModel)]='postagem.titulo' type="text" class="form-control" id="titulo"
+                        placeholder="Digite o título">
+                </div>
+
+                <div class="form-group py-2">
+                    <label for="texto">Texto</label>
+                    <textarea [(ngModel)]='postagem.texto' class="form-control" name="texto" id="texto"
+                        rows="3"></textarea>
+                </div>
+
+                <div class="form-group py-2">
+                    <label for="texto">Escolha um tema ou <a routerLink="/tema" data-bs-dismiss="modal"
+                            data-bs-target="#my-modal">cadastre um novo</a></label>
+                    <select class="form-control" name="tema" id="tema" [(ngModel)]='idTema' (change)='findByIdTema()'>
+                        <option *ngFor='let item of listaTemas' value="{{item.id}}">
+                            {{item.descricao}}
+                        </option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button type="button" class="btn fundo-preto mx-2 text-white" data-bs-dismiss="modal"
+                    routerLink="/inicio">Cancelar</button>
+                <button type="button" class="btn fundo-amarelo mx-2" data-bs-dismiss="modal"
+                    (click)='atualizar()'>Atualizar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Modal -->

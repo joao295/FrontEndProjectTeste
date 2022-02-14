@@ -1,0 +1,17 @@
+.botaoSim{
+    background-color: #ffd700;
+}
+
+.botaoNao{
+    background-color: #0c0c0d;
+    color: white;
+}
+
+.borda-arredondada {
+    border-radius: 23px;
+}
+.font-nome {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}

@@ -1,0 +1,84 @@
+#img-bg{
+    background-image: url(https://i.imgur.com/XheEYAy.jpg);
+    min-height: 695px;
+    height: auto;
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.asterisco{
+    color: red;
+}
+
+h2{
+    font-family: 'Poppins', Bold 700 sans-serif;
+    font-size: 50px;
+}
+
+.font3{
+    font-family: 'Poppins', Bold 700 sans-serif;
+    font-size: 20px; 
+}
+
+.botao-cadastrar{
+    background-color: #ffd700;    
+    }
+.botao-cancelar{
+    background-color: #0c0c0d;
+    color: white;
+}
+.col-md-4{
+    background-color: white;
+    border-radius: 35px;
+    width: 400px;
+    height: 600px;
+}
+.navbackground {
+    background-color: #000000;
+}
+.caixa-cadastrar{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.loading {
+    width: 60px;
+    height: 60px;
+}
+.galeria{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    overflow: hidden;
+  }
+  .foto{
+    position: absolute;
+    animation-name: animacao;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    border-radius: 5px;
+
+  }
+
+
+
+.btn-amarelo {
+    font-weight: bold;
+    background-color: #ffd700
+}
+
+.btn-preto {
+    font-weight: bold;
+    background-color: #0C0C0D;
+    color: white;
+}
+
+.btn-amarelo:hover {
+    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+.btn-preto:hover {
+    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.5);
+}

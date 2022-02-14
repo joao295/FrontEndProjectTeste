@@ -1,0 +1,34 @@
+.fundoEscuro {
+    background-color: #1F1F22;
+}
+
+.fundoClaro {
+    background-color: #ffff;
+}
+
+.font-atribu {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+
+
+.btn-amarelo {
+    font-weight: bold;
+    background-color: #ffd700
+}
+
+.btn-preto {
+    font-weight: bold;
+    background-color: #0C0C0D;
+    color: white;
+}
+
+.btn-amarelo:hover {
+    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+.btn-preto:hover {
+    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.5);
+}

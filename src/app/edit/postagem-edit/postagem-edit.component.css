@@ -1,0 +1,57 @@
+.font-nome {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.fundo-amarelo {
+    background-color: #ffd700
+}
+
+.fundo-cinza-escuro {
+    background-color: #1f1f22
+}
+
+.fundo-cinza-claro {
+    background-color: #3d3d43
+}
+
+.fundo-preto {
+    background-color: #0C0C0D
+}
+
+.btn-amarelo:hover {
+    font-weight: bold;
+}
+
+.btn-preto:hover {
+    font-weight: bold;
+}
+
+.fundo-amarelo:hover {
+    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+.fundo-preto:hover {
+    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+.fundo-cinza-escuro:hover {
+    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+.fundo-cinza-claro:hover {
+    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+.fonte-preta {
+    color: black
+}
+
+.borda-arredondada {
+    border-radius: 23px;
+}
+
+.borda-sombreada {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}

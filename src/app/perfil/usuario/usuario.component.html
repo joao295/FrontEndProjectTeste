@@ -1,0 +1,62 @@
+<div class="container-fluid">
+    <a routerLink="/inicio" class="text-white text-start">
+        <i class="fa fa-arrow-circle-left sizefavout" aria-hidden="true"></i>
+    </a>
+    <div class="row">
+
+        <!-- Coluna do perfil -->
+        <div class="col-md-5">
+            <div class="row d-flex justify-content-center my-5">
+
+                <div class="card d-flex flex-column font-nome align-items-center borda-arredondada borda-sombreada"
+                    style="width: 18rem;">
+
+                    <!-- Imagem de perfil-->
+                    <img src="{{usuario.foto}}" alt="Imagem de User" class="mt-4 img-fluid rounded-circle"
+                     height="100px" width="100px"  alt="minha foto de perfil">
+
+                    <!-- Card body-->
+                    <div class="card-body d-flex flex-column align-items-center">
+
+                        <h5 class="text-center fonte-nome">{{usuario.nome}}</h5>
+
+                        <h6 class="">{{usuario.resumo}}</h6>
+                        <a href="https://api.whatsapp.com/send?phone=SeuNúmero{{usuario.numero}}" class="btn fundo-amarelo text-black fw-bold w-100 my-2">WhastApp</a>
+
+                        <button class="btn fundo-preto text-white w-100 my-2" routerLink="/tema" data-bs-dismiss="modal" data-bs-target="#my-modal"> Todos os temas </button>
+                      
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- /Coluna do perfil -->
+
+   <!-- Pesquisar por título -->
+   <div class="col-md-5">
+   <div class="row d-flex justify-content-center mt-5">
+    <h3 class="text-center">Postagens de {{usuario.nome}}</h3>
+</div>
+<!-- /Pesquisar por título -->
+
+<!-- Minhas postagens -->
+        <!-- Card -->
+        <div class="col mb-3" *ngFor='let item of usuario.postagem'>
+            <div class="card borda-arredondada borda-sombreada">
+                <div class="card-body">
+                    <h4 class="card-title">{{item.titulo}}</h4>
+                    <p class="fst-italic fw-lighter">Tema: {{item.tema.descricao}}</p>
+                    <p class="card-text">{{item.texto}}</p>
+                    <div class="card-footer">
+                        <small class="text-muted">{{item.data | date: 'dd/MM/yyyy'}} às
+                            {{item.data | date:
+                            'HH:mm' }}</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Card-->
+    </div>
+</div>
+<!-- /Minhas postagens -->
+</div>
